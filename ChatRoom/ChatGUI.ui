@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">selection-background-color: rgb(150, 150, 150);</string>
+   </property>
+   <widget class="QTextEdit" name="MainTE">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>400</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>331</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <widget class="QListWidget" name="MainChat">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>331</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toBottom">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>330</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>V</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>141</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="OM">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI</family>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <fontweight></fontweight>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(230, 230, 230);
+font: 290 12pt &quot;Microsoft JhengHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Online Members</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="OML">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>37</y>
+       <width>121</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft JhengHei UI</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <fontweight></fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);
+font: 290 12pt &quot;Microsoft JhengHei UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>141</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="DM">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft JhengHei UI</family>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <fontweight></fontweight>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(230, 230, 230);
+font: 290 12pt &quot;Microsoft JhengHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Direct Message</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="DML">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>37</y>
+       <width>121</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>520</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionJoin_Server"/>
+    <addaction name="actionHost_Server"/>
+    <addaction name="actionChange_Nickname"/>
+    <addaction name="actionDisconnect"/>
+   </widget>
+   <widget class="QMenu" name="menuYou_are_Nickname">
+    <property name="title">
+     <string>You are Nickname</string>
+    </property>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuYou_are_Nickname"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionJoin_Server">
+   <property name="text">
+    <string>Join Server</string>
+   </property>
+  </action>
+  <action name="actionHost_Server">
+   <property name="text">
+    <string>Host Server</string>
+   </property>
+  </action>
+  <action name="actionChange_Nickname">
+   <property name="text">
+    <string>Change Nickname</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

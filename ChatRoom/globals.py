@@ -1,0 +1,2 @@
+EnterPressed = False
+connected = False
